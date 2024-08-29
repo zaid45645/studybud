@@ -1,0 +1,44 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.abtnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.abtnav a {
+    float: right;
+    font: 17px;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.abtnav h3 {
+    float: left;
+    color: antiquewhite;
+    text-align: center;
+    padding-left: 30px;
+    font-style: normal;
+}
+
+.abtnav a:hover {
+    opacity: 0.5;
+}
+
+body h1 {
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+body p {
+    padding-left: 80px;
+}
+
+
+

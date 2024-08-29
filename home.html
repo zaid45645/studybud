@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - StudyBud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="homenav">
+        <h3>StudyBud</h3>
+        <a href="/about">About</a>
+        <a href="/posts">Posts</a>
+        <a href="/create_lesson">New Lesson?</a>
+    </div>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+     
+    <h1>Welcome to StudyBud 📒 </h1>
+    <p>StudyBud is a brilliant and robust platform where teachers and students are connected through the world of the internet,<br> it mainly helps a teacher share ideas and thoughts with students through posts,
+    which outbrings collaboration and exellence.<br> Through StudyBud, students can attain valuable content which not only can it can be academic, but non-acadamic too.<br> Allowing for an environment where teachers are connected with the students helping them grow and sprout<br> their trees in education.</p>
+    <p>StudyBud is made basically using Falsk, HTML and CSS. The Falsk handles the backend of the server while HTML and CSS<br>
+    help bring the app/website together. It has fast routing connections and keeps track of all the data happening in the backend.<br>It is a brialliant website students should check out and help collaborate in. Thanks!</p>
+    
+</body>
+</html>

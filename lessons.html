@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - StudyBud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='lessons.css') }}">
+</head>
+<body>
+    <div class="lessonnav">
+        <h3>StudyBud</h3>
+        <a href="/about">About</a>
+        <a href="/posts">Posts</a>
+        <a href="/create_lesson">New Lesson?</a>
+    </div>
+
+    {% block content %}
+     <h2>{{ lesson.title }}</h2>
+     <p>{{ lesson.content }}</p>
+     <a href="{{ url_for('posts') }}" id="back">Back to lessons</a>
+    {% endblock %}
+</body>
+</html>

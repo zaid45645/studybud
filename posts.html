@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - StudyBud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='posts.css') }}">
+</head>
+<body>
+    <div class="postsnav">
+        <h3>StudyBud</h3>
+        <a href="/about">About</a>
+        <a href="/posts">Posts</a>
+        <a href="/create_lesson">New Lesson?</a>
+        <a href="/home">Home</a>
+    </div>
+    <h2>Lessons 📓 </h2>
+    <ul>
+        {% for lesson in lessons %}
+                <a href="{{ url_for('lesson_detail', lesson_id=loop.index0) }}">{{ lesson.title }}</a><br><br><br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
