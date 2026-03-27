@@ -7,6 +7,13 @@ users = {"name": "admin", "pass": "12345678"}
 
 points = 0
 
+app = Flask(__name__)
+
+lessons = []
+users = {"name": "admin", "pass": "12345678"}
+
+points = 0
+
 @app.route("/login", methods=["POST", "GET"])
 def login():
     if request.method == "POST":
